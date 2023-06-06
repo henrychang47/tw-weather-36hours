@@ -1,0 +1,24 @@
+@use "../node_modules/bootstrap/scss/bootstrap";
+@use "./dashboard.scss";
+@use "./displayContent.scss";
+@use "./card.scss";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", Tohoma, Arial;
+
+  background-image: url(../bg.jpg);
+  background-size: cover;
+  background-position: center;
+}

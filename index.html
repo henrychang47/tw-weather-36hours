@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>台灣今明36小時天氣預報</title>
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="dashboard container ">
+    <div class="rounded fs-4 mt-3 p-3 text-center ">
+      <h3 class="title fw-semibold mb-3">
+        台灣今明36小時天氣預報
+      </h3>
+      <div class="mb-3 row">
+        <span class="col-xl-1">縣市 :</span>
+        <div class="cityCheckButtons d-flex flex-wrap gap-2 col-xl-11"></div>
+      </div>
+      <div class="infoCheckButtons d-flex flex-wrap gap-2 mb-3">
+        <span class="me-2">顯示資訊 :</span>
+      </div>
+      <button class="queryButton btn btn-primary w-25 align-middle">查詢</button>
+      <button class="hidingButton btn p-0 m-0 d-md-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-caret-down"
+          viewBox="0 0 16 16">
+          <path
+            d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="container my-3">
+    <div class="displayContent d-flex gap-3 flex-wrap rounded p-3 justify-content-center">
+      <div class="statement">
+        <h5>資料來源</h5>
+        <ul>
+          <li>中央氣象局[2023]
+            [<a href="https://opendata.cwb.gov.tw/dataset/forecast/F-C0032-001" target="_blank">
+              臺灣各縣市今明36小時天氣預報預報-今明36小時天氣預報
+            </a>]
+          </li>
+          <li>此開放資料依政府資料開放授權條款 (Open Government Data License) 進行公眾釋出，
+            使用者於遵守本條款各項規定之前提下，得利用之。
+          </li>
+          <li>政府資料開放授權條款:
+            <a href="https://data.gov.tw/license" target="_blank">https://data.gov.tw/license</a>
+          </li>
+        </ul>
+        <h5>背景圖片</h5>
+        <ul>
+          <li>Photo by
+            <a href="https://unsplash.com/@brindo_?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Jack Brind
+            </a>
+            on
+            <a
+              href="https://unsplash.com/photos/eV7WTlVcydg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Unsplash
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

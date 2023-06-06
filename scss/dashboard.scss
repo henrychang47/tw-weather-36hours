@@ -1,0 +1,38 @@
+.dashboard {
+  >div {
+    background-color: rgba(255, 255, 255, 0.65);
+    transition: all .5s;
+  }
+
+  .title {
+    letter-spacing: 0.2em;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .dashboard.hiding {
+    >div {
+      .title {
+        margin-bottom: 0px !important;
+      }
+
+      padding-bottom: 0px !important;
+    }
+
+    .row,
+    .infoCheckButtons,
+    .queryButton {
+      display: none !important;
+    }
+
+    .hidingButton {
+      display: inline-block;
+    }
+  }
+
+  .dashboard {
+    .hidingButton {
+      display: none;
+    }
+  }
+}
